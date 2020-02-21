@@ -48,9 +48,21 @@ This repository contains my answers to Part 1, 2, 3, and 4.
 
 ### Task 1. Write a query to calculate total number of customers available. 
 ```sql
---This is my PostgreSQL script
-SELECT COUNT(*) “Number of Jobs” 
-FROM jobs; 
+--This is my PostgreSQL script for a query to calculate total number of customers available.
+SELECT COUNT(id) “Number of Customers” 
+FROM customers; 
+
+--This is my PostgreSQL script for  a query to compute the average list_price from the product table. 
+SELECT AVG(list_price) “Average List Price” 
+FROM products; 
+
+--This is my PostgreSQL script for a query to display the total standard_cost from the product table.
+SELECT AVG(standard_cost) “Average Standard Cost” 
+FROM products; 
+
+--This is my PostgreSQL script fora query to find which employee’s last name comes first in the alphabet. 
+SELECT MIN(last_name) “First Last name” 
+FROM employees; 
 ```
 ```js
 //This is my Node.js and express script
